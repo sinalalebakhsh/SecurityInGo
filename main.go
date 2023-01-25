@@ -10,7 +10,7 @@ import (
 func main() {
 	fmt.Println("Port Scanner in Go")
 
-	open := port.ScanPort("tcp", "localhost", 1313)
+	open := port.ScanPort("tcp", "localhost", 80)
 
-	
+	fmt.Printf("Port open: %t\n", open)
 }
