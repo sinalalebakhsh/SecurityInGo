@@ -7,13 +7,13 @@ import (
 )
 
 type ScanResult struct  {
-	Port int
+	Port string
 	State string
 }
 
 
 func ScanPort(protocol, hostname string, port int) ScanResult  {
-	result := ScanResult{Port: port}
+	result := ScanResult{Port: protocol + "/" + strconv.Itoa(port)}
 	address := hostname + ":" + strconv.Itoa(port)
 	conn, err := net.DialTimeout(protocol, address, 60*time.Second)
 
