@@ -32,7 +32,7 @@ func ScanPort(protocol, hostname string, port int) ScanResult  {
 func InitialScan(hostname string,) []ScanResult  {
 	var results []ScanResult
 
-	for i := 1; i <= 500; i++  {
+	for i := 1; i <= 200; i++  {
 		results = append(results, ScanPort("tcp", hostname, i))
 	}
 
