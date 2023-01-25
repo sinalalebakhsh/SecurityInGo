@@ -17,3 +17,9 @@ func ScanPort(protocol, hostname string, port int) bool  {
 
 	return true
 }
+
+
+
+func InitialScan(hostname string,) []ScanResult  {
+	
+}
