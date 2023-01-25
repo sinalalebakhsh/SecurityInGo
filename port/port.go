@@ -35,4 +35,6 @@ func InitialScan(hostname string,) []ScanResult  {
 	for i := 1; i <= 500; i++  {
 		results = append(results, ScanPort("tcp", hostname, i))
 	}
+
+	return results
 }
