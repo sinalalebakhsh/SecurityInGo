@@ -10,5 +10,7 @@ import (
 func main() {
 	fmt.Println("Port Scanner in Go")
 
-	open := port.ScanPort()
+	open := port.ScanPort("tcp", "localhost", 1313)
+
+	
 }
