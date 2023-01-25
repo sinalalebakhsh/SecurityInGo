@@ -13,4 +13,7 @@ func ScanPort(protocol, hostname string, port int) bool  {
 	if err != nil {
 		return false
 	}
+	defer conn.Close()
+
+	return true
 }
