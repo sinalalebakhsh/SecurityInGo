@@ -14,6 +14,6 @@ func main() {
 	fmt.Printf("Port open: %t\n", open)
 
 
-	results := port.InitialScan("localhost")
+	results := port.InitialScan("https://google.com")
 	fmt.Println(results)
 }
